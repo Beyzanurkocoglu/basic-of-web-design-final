@@ -1,0 +1,28 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8"/>
+            <tittle>Sınav Puanı Hesaplama</tittle>
+        </head>
+        <body>
+            <form>
+                <input type="text" id="vize" placeholder="vize"/><br/></br>
+                <input type="text" id="final"placeholder="final"/><br/></br>
+                <button onclick="hesapla()">Hesapla</button><br/></br>
+            </form>
+         <p id="sonuç"></p>
+         <script type="text/javascript">
+            function hesapla() { event.preventDefault();
+           let vize=document.getElementById("vize").value;
+           let final=document.getElementById("final").value;
+
+           let sonuç=vize *0.4 + final *0.6;
+
+           document.getElementById("sonuç").innerHTML=sonuç;
+            }
+
+         </script>
+
+        </body>
+    </html>
+</DOCTYPE>
